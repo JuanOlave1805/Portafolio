@@ -73,6 +73,7 @@ $icons.forEach(icon => {
     }
 });
 
+let isMenuOpen = false;
 // Toggle mobile menu visibility / Cambiar visibilidad del menú móvil
 $mobileMenuButton.addEventListener('click', () => {
     $mobileMenu.classList.toggle('hidden');
