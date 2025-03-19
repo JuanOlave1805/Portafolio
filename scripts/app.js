@@ -6,7 +6,8 @@ const $icons = document.querySelectorAll('#icon');
 const $scrollIndicator = document.getElementById('scroll-indicator');
 const $mobileMenuButton = document.getElementById('mobileMenuButton');
 const $mobileMenu = document.getElementById('mobileMenu');
-const $typingText = document.getElementById('typingText');
+const $typingTextEspañol = document.getElementById('typingTextEspañol');
+const $typingTextIngles = document.getElementById('typingTextIngles');
 
 // Toggle between dark and light themes / Cambiar entre temas oscuros y claros
 function toggleTheme() {
@@ -118,11 +119,12 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Typing animation / Animación de tipeo
 function typeText(element, text, speed) {
+    if (!element) return; // Si el elemento no existe, no ejecutar la función.
+
     let i = 0;
     element.innerHTML = '';
-    
+
     function type() {
         if (i < text.length) {
             element.innerHTML += text.charAt(i);
@@ -134,4 +136,5 @@ function typeText(element, text, speed) {
 }
 
 // Execute typing animation / Ejecutar la animación de tipeo
-typeText(typingText, "Doy vida a tus ideas con diseños simples pero impactantes, y una funcionalidad que realmente funciona. Mi objetivo es crear aplicaciones que no solo se vean bien, sino que también ofrezcan experiencias memorables desde el primer clic.", 50);
+typeText($typingTextEspañol, "Doy vida a tus ideas con diseños simples pero impactantes, y una funcionalidad que realmente funciona. Mi objetivo es crear aplicaciones que no solo se vean bien, sino que también ofrezcan experiencias memorables desde el primer clic.", 50);
+typeText($typingTextIngles, "I bring your ideas to life with beautiful designs and flawless functionality. My mission is to create applications that make an impact and deliver memorable experiences from the first click.", 50);
