@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juancho Dev - Junior Full Stack Developer</title>
+    <title>Juan Dev - Desarrollador Junior Full Stack</title>
     <link rel="stylesheet" href="scripts/style.css">
     <link rel="shortcut icon" href="imagenes/iconPortafolio.png">
 </head>
@@ -12,14 +12,16 @@
 
     <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-primary-light dark:text-primary-dark">Juancho Dev</h1>       
+            <h1 class="text-2xl font-bold text-primary-light dark:text-primary-dark">Juan Dev</h1>       
+            <!-- Deskopt -->
             <nav class="hidden md:flex items-center">
                 <ul class="flex space-x-4 mr-4">
-                    <li><a href="#about" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">About</a></li>
-                    <li><a href="#skills" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Skills</a></li>
-                    <li><a href="#projects" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Projects</a></li>
-                    <li><a href="#education" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Education</a></li>
-                    <li><a href="#contact" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Contact</a></li>
+                    <li><a href="#about" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300 ">Acerca de mi</a></li>
+                    <li><a href="#skills" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Habilidades</a></li>
+                    <li><a href="#projects" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Proyectos</a></li>
+                    <li><a href="#education" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Educación</a></li>
+                    <li><a href="#experience" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Experiencia</a></li>
+                    <li><a href="#contact" class="hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Contacto</a></li>
                 </ul>
                 <button id="themeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark">
                     <svg
@@ -46,7 +48,13 @@
                         <path d="M18.36 5.64l1.42-1.42"></path>
                     </svg>
                 </button>
+
+                <button class="mx-2 p-1 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark">
+                   <a href="ingles.html"><img src="imagenes/esp_icon_Portafolio.png" alt="" class="h-10"></a>
+                </button>
             </nav>
+
+            <!-- Mobile -->
             <div class="md:hidden flex items-center">
                 <button id="mobileThemeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark mr-2">
                     <svg
@@ -73,8 +81,11 @@
                         <path d="M18.36 5.64l1.42-1.42"></path>
                     </svg>
                 </button>
+                <button class="mx-1 p-1 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark">
+                    <a href="ingles.html"><img src="imagenes/logo.jpg" alt="" class=" h-10"></a>
+                 </button>
                 <button id="mobileMenuButton" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
-                    <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                    <svg viewBox="0 0 24 24" class="h-8 w-8 fill-current">
                         <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"></path>
                     </svg>
                 </button>
@@ -82,132 +93,194 @@
         </div>
         <div id="mobileMenu" class="hidden bg-white dark:bg-gray-900 py-2 h-[165px] z-0 relative">
             <ul class="container mx-auto px-4 space-y-2">
-                <li><a href="#about" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">About</a></li>
-                <li><a href="#skills" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Skills</a></li>
-                <li><a href="#projects" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Projects</a></li>
-                <li><a href="#education" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Education</a></li>
-                <li><a href="#contact" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Contact</a></li>
+                <li><a href="#about" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Acerca de mi</a></li>
+                <li><a href="#skills" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Habilidades</a></li>
+                <li><a href="#projects" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Proyectos</a></li>
+                <li><a href="#education" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Educación</a></li>
+                <li><a href="#experience" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Experiencia</a></li>
+                <li><a href="#contact" class="block hover:text-primary-light dark:hover:text-primary-dark transition-colors duration-300">Contacto</a></li>
             </ul>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-8">
         <section id="about" class="py-20 text-center scroll-mt-16 fade-in">
-            <h2 class="text-4xl font-bold mb-4 text-primary-light dark:text-primary-dark">Junior Full Stack Developer</h2>
+            <h2 class="text-4xl font-bold mb-4 text-primary-light dark:text-primary-dark">Desarrollador Junior Full Stack</h2>
             <p class="text-base md:text-lg lg:text-xl mb-8 text-secondary-light dark:text-secondary-dark break-words" id="typingText">
-                Bringing your ideas to life: I'm passionate about combining beautiful design with solid functionality to create apps that truly resonate with users. I work to make every project not only look great, but also perform flawlessly, delivering a fluid experience focused on what really matters.
+                Doy vida a tus ideas con diseños atractivos y funcionalidad impecable. Mi misión es crear aplicaciones que impacten y brinden experiencias memorables desde el primer clic.
             </p>                     
-            <a href="#contact" class="bg-primary-light dark:bg-primary-button text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition duration-300">View My Projects</a>
+            <a href="#projects" class="bg-primary-light dark:bg-primary-button text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition duration-300">Ver mis proyectos</a>
         </section>
 
         <section id="skills" class="py-20 scroll-mt-16 slide-in">
-            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Skills & Technologies</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Habilidades y tecnologías</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300">
                     <svg class="h-12 w-12 text-accent-light dark:text-accent-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <h3 class="text-lg font-semibold">HTML/CSS</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Responsive Design</p>
+                    <h3 class="text-lg font-semibold">HTML/CSS/JavaScript</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Diseño reponsivo, ES6+</p>
                 </div>
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300">
                     <svg class="h-12 w-12 text-accent-light dark:text-accent-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                     </svg>
-                    <h3 class="text-lg font-semibold">JavaScript</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">ES6+, DOM Manipulation</p>
+                    <h3 class="text-lg font-semibold">C#/.NET</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Microservicios</p>
                 </div>
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300">
                     <svg class="h-12 w-12 text-accent-light dark:text-accent-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                     </svg>
-                    <h3 class="text-lg font-semibold">MySQL</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Database Management</p>
+                    <h3 class="text-lg font-semibold">MySQL/SQLServer</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Gestión de bases de datos</p>
                 </div>
                 <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center justify-center transform hover:scale-105 transition duration-300">
                     <svg class="h-12 w-12 text-accent-light dark:text-accent-dark mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
-                    <h3 class="text-lg font-semibold">Java</h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Object-Oriented Programming</p>
+                    <h3 class="text-lg font-semibold">Java/PHP</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">Programación orientada a objetos</p>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="py-20 scroll-mt-16 slide-in">
-            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Projects</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Proyectos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="/placeholder.svg?height=200&width=400" alt="Personal Blog" class="w-full h-48 object-cover" />
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Blog informativo sobre noticias de software</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">A responsive blog website with a content management system</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">CSS</span>
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
+                <a href="https://juanolave1805.github.io/Pagina_informativa/" target="_blank" class="block">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="/imagenes/capturaPaginaInformativa.png" alt="Personal Blog" class="w-full h-48 object-cover"  href="www.google.com"/>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Blog Informativo ADSO Noticias Software</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Desarrollo de web informativa con noticias globales y del SENA, creada con PHP, JavaScript, HTML, CSS y MySQL. Su estructura optimizada permite un acceso rápido a la información, gestionando el contenido directamente en la base de datos.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">CSS</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">MYSQL</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">PHP</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="/placeholder.svg?height=200&width=400" alt="Weather Dashboard" class="w-full h-48 object-cover" />
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Weather Dashboard</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">A weather app that displays current conditions and forecasts</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">CSS</span>
-                            <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">API Integration</span>
+                </a>
+                <a href="https://github.com/JuanOlave1805/Administrador_Bicicleteria_Java_Jframe" target="_blank" class="block">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="imagenes/capturaAplicativoBicicleteria.png" alt="Weather Dashboard" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Aplicativo gestionador de ventas de Bicicleteria</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Aplicación en Java con JFrame y MySQL para administrar ventas, inventario y reparaciones en una tienda de bicicletas. Permite gestionar stock, registrar ventas y dar seguimiento a servicios técnicos, optimizando la operación del negocio.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">JAVA</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">MYSQL</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+                <a href="https://juanolave1805.github.io/Portafolio/" target="_blank" class="block">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="imagenes/capturaPortafolio.png" alt="Weather Dashboard" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Portafolio</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Un espacio donde muestro mis proyectos y habilidades en desarrollo web. Creado con HTML, CSS, JavaScript y Tailwind CSS, este sitio combina diseño moderno, interactividad y una experiencia fluida. Totalmente responsive y optimizado para destacar cada trabajo de forma clara y atractiva. ¡Explóralo y conoce más sobre lo que hago!</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">CSS</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/JuanOlave1805/Administrador_Bicicleteria_WEBApi" target="_blank" class="block">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300">
+                        <img src="imagenes/capturaAplicativoBicicleteriaWeb.png" alt="Weather Dashboard" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Aplicativo web gestionador de ventas de Bicicleteria mediante Api-RestFull</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Aplicación web desarrollada con API RESTful, diseñada para gestionar ventas, inventario y reparaciones en una tienda de bicicletas. Utiliza una arquitectura moderna que permite la administración eficiente del stock, el registro de ventas y el seguimiento de servicios técnicos.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">CSS</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
+                                <span class="bg-accent-light bg-opacity-10 text-accent-light dark:bg-accent-dark dark:bg-opacity-10 dark:text-accent-dark text-xs font-semibold px-2.5 py-0.5 rounded">Api-RestFull</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section id="education" class="py-20 scroll-mt-16 slide-in">
-            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Education</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Educación</h2>
             <div class="space-y-8">
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Bachelor of Science in Computer Science</h3>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">University of Technology | 2018 - 2022</p>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Tecnologo en Analisis y Desarrollo de Software</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Servicio Nacional de Aprendizaje (SENA) | 2023 - 2025</p>
                     <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
-                        <li>Relevant coursework: Web Development, Database Systems, Algorithms, and Data Structures</li>
-                        <li>Graduated with honors (GPA: 3.8/4.0)</li>
-                        <li>Participated in various hackathons and coding competitions</li>
+                        <li>Formación en desarrollo web, bases de datos, algoritmos y estructuras de datos.</li>
+                        <li>Participación en hackatones y competencias de programación.</li>
+                        <li>Desarrollo de proyectos como Gestión de Bicicletería y web informativa de noticias.</li>
                     </ul>
                 </div>
                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Full Stack Web Development Bootcamp</h3>
-                    <p class="text-gray-600 dark:text-gray-400 mb-4">CodeCamp Academy | 2022</p>
+                    <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Curso Java Básico</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Udemy | 2025</p>
                     <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
-                        <li>Intensive 12-week program covering modern web development technologies</li>
-                        <li>Developed multiple projects including a full-stack e-commerce application</li>
-                        <li>Gained hands-on experience with React, Node.js, and MongoDB</li>
+                        <li>Curso introductorio a la programación en Java</li>
+                        <li>Abarcando conceptos fundamentales como variables y estructuras de control</li>
+                        <li>Trabajo con arreglos y principios de Programación Orientada a Objetos (POO)</li>
+                        <li>Manejo de excepciones y entrada/salida de datos</li>
+                    </ul>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Curso JavaScript Básico</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Udemy | 2025</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Curso introductorio a JavaScript</li>
+                        <li>Cubriendo conceptos esenciales como variables y tipos de datos</li>
+                        <li>Desarrollo de funciones y manejo de eventos</li>
+                        <li>Manipulación del DOM para interactividad en páginas web</li>
+                        <li>Introducción a la asincronía y manejo de APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 scroll-mt-16 slide-in">
+            <h2 class="text-3xl font-bold mb-8 text-center text-primary-light dark:text-primary-dark">Experiencia</h2>
+            <div class="space-y-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-secondary-light dark:text-secondary-dark">Desarrollador de Software</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Sistemas Comerciales SYSCOM | 2024 - 2025</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+                        <li>Optimización y mantenimiento de aplicaciones DLL, garantizando estabilidad y rendimiento superior en nuevas versiones.</li>
+                        <li>Implementación de buenas prácticas de desarrollo que redujeron errores y mejoraron la eficiencia del código en DLLs.</li>
+                        <li>Elaboración de diagramas y documentación técnica detallada, facilitando la escalabilidad y el mantenimiento del proyecto.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="py-20 scroll-mt-16">
-            <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center">Contáctame</h2>
             <div class="flex justify-center space-x-8">
                 <!-- Email -->
-                <a href="mailto:jane@example.com" class="flex items-center space-x-2 bg-white dark:bg-gray-800 px-3 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
+                <a href="mailto:olavejuan1805@gmail.com" class="flex items-center space-x-2 bg-white dark:bg-gray-800 px-3 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
                     <svg class="h-6 w-6 text-primary-light dark:text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                     <span class="text-sm md:text-base lg:text-lg text-primary-light dark:text-primary-dark">Email</span>
                 </a>
                 <!-- GitHub -->
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-white dark:bg-gray-800 px-3 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
+                <a href="https://github.com/JuanOlave1805" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-white dark:bg-gray-800 px-3 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
                     <svg class="h-6 w-6 text-primary-light dark:text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                     <span class="text-sm md:text-base lg:text-lg text-primary-light dark:text-primary-dark">GitHub</span>
                 </a>
                 <!-- LinkedIn -->
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-white dark:bg-gray-800 px-3 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
+                <a href="www.linkedin.com/in/juan-david-olave-82176a30a" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-white dark:bg-gray-800 px-3 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
                     <svg class="h-6 w-6 text-primary-light dark:text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                     </svg>
@@ -221,7 +294,7 @@
 
     <footer class="py-8 bg-background-light text-gray-900 dark:bg-background-dark dark:text-gray-100 transition-colors duration-300 border-t border-gray-300 dark:border-gray-700">
         <div class="text-center">
-            <p>&copy; 2023 Juancho Dev. All rights reserved.</p>
+            <p>&copy; 2025 Juancho Dev. Todos los derechos reservados</p>
         </div>
     </footer>
 

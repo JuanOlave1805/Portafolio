@@ -134,4 +134,4 @@ function typeText(element, text, speed) {
 }
 
 // Execute typing animation / Ejecutar la animación de tipeo
-typeText(typingText, "Bringing your ideas to life: I'm passionate about combining beautiful design with solid functionality to create apps that truly resonate with users. I work to make every project not only look great, but also perform flawlessly, delivering a fluid experience focused on what really matters.", 50);
+typeText(typingText, "Doy vida a tus ideas con diseños simples pero impactantes, y una funcionalidad que realmente funciona. Mi objetivo es crear aplicaciones que no solo se vean bien, sino que también ofrezcan experiencias memorables desde el primer clic.", 50);
